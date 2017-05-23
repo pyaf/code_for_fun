@@ -9,3 +9,5 @@ Just run `get_bhu_mails.py` and it will crawl the contact section of BHU website
 ## csv_to_vcf.py
 
 A python script to create a vcf file using data(name and phone number) stored in a csv file.
+
+Enjoy

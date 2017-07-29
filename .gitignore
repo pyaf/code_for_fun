@@ -9,6 +9,11 @@ __pycache__/
 # Distribution / packaging
 .Python
 proxy/
+resuts.txt
+others/
+voters_list.pdf
+wish_me_HBD.py
+fedena/
 env/
 build/
 develop-eggs/

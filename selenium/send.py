@@ -9,18 +9,18 @@ import os
 # to chromedriver in your computer
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# driver = webdriver.Chrome(os.path.join(BASE_DIR, 'chromedriver'))
+driver = webdriver.Chrome(os.path.join(BASE_DIR, 'chromedriver'))
 #open tab
-driver = webdriver.Firefox()
+# driver = webdriver.Firefox()
 driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 't')
 
-driver.get("https://web.whatsapp.com/")
+driver.get("https://gmail.com/")
 wait = WebDriverWait(driver, 600)
 
-target = '"Kriti"'
+target = '"BHU Mantri"'
 
 # Replace the below string with your own message
-string = "Message sent using Python!!! \n\n lol"
+string = "Pelu mantri!!!!!! \n\n lol"
 
 x_arg = '//span[contains(@title,' + target + ')]'
 print(x_arg)

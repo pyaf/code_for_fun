@@ -4,7 +4,7 @@ This code automates the authentication process of IIT (BHU) LAN.
 
 ## Dependencies:
 
-	Python 3
+* Python 3
 
 ### Instructions:
 

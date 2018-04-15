@@ -17,10 +17,11 @@ driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 't')
 driver.get("https://gmail.com/")
 wait = WebDriverWait(driver, 600)
 
+# your friend's name in your contact list
 target = '"BHU Mantri"'
 
 # Replace the below string with your own message
-string = "Pelu mantri!!!!!! \n\n lol"
+string = "lol"
 
 x_arg = '//span[contains(@title,' + target + ')]'
 print(x_arg)

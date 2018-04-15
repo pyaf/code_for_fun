@@ -46,6 +46,40 @@ input_box = wait.until(EC.presence_of_element_located((
 input_box.send_keys(msg_body + Keys.ENTER)
 time.sleep(1)
 
+file_input = driver.execute_script(
+ "var input = document.createElement('input');"
+ "input.type = 'file';"
+ "input.style.display = 'block';"
+ "if (document.body.childElementCount > 0) {"
+ " document.body.insertBefore("
+ " input, document.body.childNodes[0]"
+ " );"
+ "} else {"
+ " document.body.appendChild(input);"
+ "}"
+ "return input;"
+)
+def dispatch_file_drag_event(event_name, to, file_input_element):
+ 	driver.execute_script(
+	 "var event = document.createEvent('CustomEvent');"
+	 "event.initCustomEvent(arguments[0], true, true 0);"
+	 "event.dataTransfer = {"
+	 " files: arguments[1].files"
+	 "};"
+	 "arguments[2].dispatchEvent(event);",
+	 event_name, file_input_element, to)
+ 	
+file_input.send_keys('/home/ags/test.txt')
+dispatch_file_drag_event('dragenter', 'document', file_input)
+drag_target = driver.find_element_by_xpath(
+ "//div[text()='Drop files here']"
+)
+dispatch_file_drag_event('drop', drag_target, file_input)
+driver.execute_script(
+ "arguments[0].parentNode.removeChild(arguments[0]);", file_input
+)
+
+
 send_xpath = "//div[text()='Send']"
 input_box = wait.until(EC.presence_of_element_located((
     By.XPATH, send_xpath)))

@@ -37,8 +37,7 @@ def crawl():
     # parse the response
     if 'Firewall authentication failed. Please try again.' in resp.text:
         print('Authentication Failure, Please check your username and password.')
-    if 'Firewall Authentication Keepalive Window':
+    if 'Firewall Authentication Keepalive Window' in resp.text:
         print('Authentication Successful, Enjoy!')
 
 crawl()
-    

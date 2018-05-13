@@ -9,6 +9,7 @@ __pycache__/
 *.jpeg
 # Distribution / packaging
 .Python
+visualize.ipynb
 proxy/
 resuts.txt
 others/

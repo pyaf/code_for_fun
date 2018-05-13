@@ -2,6 +2,11 @@
 
 This repo contains my code to automate boring stuff around me.
 
+
+## `WhatsApp_img_notes_extractor`
+
+Code to extract study notes from WhatsApp Images folder. I've trained a CNN model to predict such images and extract them out of WhatsApp Images directory.
+
 ## `auto_lan_auth`
 
 Code to automate the LAN Authentication process on IIT (BHU) campus.

@@ -20,4 +20,4 @@ Install dependencies using `pip install -r requirements.txt`. Connect your Smart
 I've trained the model on about 1000 images and using Keras' data augmentation pipeline. Currently the model is 85% accurate on my dataset. Please feel free to add your own data to make the model more accurate. To add your own data, create a `data` folder in `behind_the_scenes` folder, create two subfolders `1` and `0` inside `data`, in `1` put study notes and put all other important images in `0`. For model training code see `behind_the_scenes` folder.
 
 Enjoy!
- inside `data`
+

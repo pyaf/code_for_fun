@@ -14,7 +14,7 @@ driver = webdriver.Chrome(os.path.join(BASE_DIR, 'chromedriver'))
 # driver = webdriver.Firefox()
 driver.find_element_by_tag_name('body').send_keys(Keys.CONTROL + 't')
 
-driver.get("https://gmail.com/")
+driver.get("https://web.whatsapp.com/")
 wait = WebDriverWait(driver, 600)
 
 # your friend's name in your contact list

@@ -6,7 +6,7 @@ like this:
 
 <img src="behind_the_scenes/image.jpeg" width="300px" height="500px" />
 
-Images in blue circles are notes which you may wanna delete or extract them to a folder (in case you are a maggu :P) and red circles are important ones which shouldn't be messed up with.
+Images in red circles are notes which you may wanna delete or extract them to a folder (in case you are a maggu :P) and blue circles are important ones which shouldn't be messed up with.
 
 Requirements:
 

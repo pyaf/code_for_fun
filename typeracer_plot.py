@@ -7,8 +7,8 @@ from bs4 import BeautifulSoup
 from matplotlib import pyplot as plt
 
 username = "agga_daku"  # typeracer username
-num_races = 1000  # number of last races to plot
-url = "https://data.typeracer.com/pit/race_history?user=%s&n=1000&startDate=" % username
+num_races = 1000  # number of last races to plot, too high value may result in error :/
+url = "https://data.typeracer.com/pit/race_history?user=%s&n=%s&startDate=" % (username, num_races)
 
 response = requests.get(url)  # get html content
 soup = BeautifulSoup(response.text, "lxml")  # make a soup

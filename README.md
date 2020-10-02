@@ -13,6 +13,8 @@ This repository contains my code scripts to automate boring stuff around me.
 - [set_router_ip](#set_router_ip)
 - [selenium/send](#selenium/send)
 - [selenium/gmail](#selenium/gmail)
+- [github_repo_creator.py](#github_repo_creator.py)
+
 
 ### `WhatsApp_img_notes_extractor`
 
@@ -55,5 +57,9 @@ A python script to send messages using WhatsApp web, using selenium.
 ### `selenium/gmail`
 
 A python script to send emails using the Gmail web interface, using selenium.
+
+### `github_repo_creator.py`
+
+A python script to create github repo from command line.
 
 Enjoy!
